@@ -1,4 +1,4 @@
-# Verificar se o ano é bissexto
+# Verifica se o ano é bissexto
 def e_bissexto(ano):
     if ano % 4 == 0:
         if ano % 100 == 0:
@@ -17,7 +17,7 @@ mes = int(input("Digite o mês: "))
 ano = int(input("Digite o ano: "))
 dias_para_adicionar = int(input("Digite a quantidade de dias a serem somados: "))
 
-# Dicionário de dias por mês, considerando bissexto ou não
+# Dicionário de dias por mês, considerando se o ano é ou não bissexto
 dias_no_mes = {
     1: 31,  # Janeiro
     2: 29 if e_bissexto(ano) else 28,  # Fevereiro (considerando ano bissexto)
@@ -50,12 +50,12 @@ for mes in range(mes, 13):  # Percorre os meses a partir do mês atual até deze
 print(f"A nova data é: {dia:02}/{mes:02}/{ano}")
 
 # O código acima pode ser resumido utilizando as bibliotecas date e timedelta
-    # from datetime import date, timedelta
+# from datetime import date, timedelta
 
-    # dia = int(input("Digite o dia: "))
-    # mes = int(input("Digite o mês: "))
-    # ano = int(input("Digite o ano: "))
-    # dias_para_adicionar = int(input("Digite a quantidade de dias a serem adicionados: "))
+# dia = int(input("Digite o dia: "))
+# mes = int(input("Digite o mês: "))
+# ano = int(input("Digite o ano: "))
+# dias_para_adicionar = int(input("Digite a quantidade de dias a serem adicionados: "))
 
-    # data_atual = date(ano, mes, dia)
-    # print(data_atual + timedelta(days = dias_para_adicionar))
+# data_atual = date(ano, mes, dia)
+# print(data_atual + timedelta(days = dias_para_adicionar))
