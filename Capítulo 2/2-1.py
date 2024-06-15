@@ -1,0 +1,1 @@
+print("Lista de compras:\n\nleite\npão\ncafé")
