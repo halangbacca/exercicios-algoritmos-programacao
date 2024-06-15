@@ -1,15 +1,8 @@
-n = int(input("Digite um número: "))
+numero = int(input("Digite um número: "))
 
-if n <= 0:
-    print("O número deve ser maior que zero.")
-elif n == 1:
-    print(0)
-elif n == 2:
-    print(1)
-else:
-    a, b = 0, 1
-    
-    for _ in range(2, n):
-        a, b = b, a + b
+sequencia_fibonacci = [0, 1]
 
-    print(b)
+while len(sequencia_fibonacci) <= numero:
+    sequencia_fibonacci.append(sequencia_fibonacci[-1] + sequencia_fibonacci[-2])
+
+print(sequencia_fibonacci[-1])
